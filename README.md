@@ -56,17 +56,17 @@ module.exports = {
 
 **Vue.computed.$tags/Vue.computed.$categories**
 
-- length: The length of all the tags
+- `length`: The length of all the tags
 
-- map: Object of tags
+- `map`: Object of tags
 
-- list: Array of tags data
+- `list`: Array of tags data
 ```js
 [{ name, path, pages }]
 ```
-  - name: The tag name, such as `React`, `Redux`
-  - path: The path which page show the posts of a specific tag, for example `xxx.blog/tag/react` will show the posts(the pages field) which tag is `react`
-  - pages: The posts which the tag field contains
+  - `name`: The tag name, such as `React`, `Redux`
+  - `path`: The path which page show the posts of a specific tag, for example `xxx.blog/tag/react` will show the posts(the pages field) which tag is `react`
+  - `pages`: The posts which the tag field contains
 
 **Vue.computed.$tag/Vue.computed.$category**
 
@@ -74,10 +74,10 @@ This value is a item of `Vue.computed.$tags.list` which the name field equals to
 
 ## The Layout maybe you should support
 
-- Tags: This layout is used to show the tags page, such as `xxx.blog/tag/`
+- `Tags`: This layout is used to show the tags page, such as `xxx.blog/tag/`
 
-- Tag: This layout is used to show the posts which tag equals to tag url, for example `xxx.blog/tag/react` will show the posts which tag is `react`
+- `Tag`: This layout is used to show the posts which tag equals to tag url, for example `xxx.blog/tag/react` will show the posts which tag is `react`
 
-- Categories: As same as the Tags layout
+- `Categories`: As same as the Tags layout
 
-- Category: As same as the Tag layout
+- `Category`: As same as the Tag layout
