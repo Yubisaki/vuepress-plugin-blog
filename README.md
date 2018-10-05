@@ -26,16 +26,16 @@ This option is the extend enhancers for [extendPageData](https://vuepress.vuejs.
 **tagUrl**
 - Type: `string`
 
-- default: /tag/
+- default: `/tag/`
 
-This option is the page path which will show tags or tag's posts
+This option is the path which page show the tags or the posts of a specific tag
 
 **categoryUrl**
 - Type: `string`
 
-- default: /category/
+- default: `/category/`
 
-This option is the page path which will show categories or category's posts
+This option is the path which page show the categories or the posts of a specific category
 
 ## example
 
@@ -61,17 +61,17 @@ module.exports = {
 [{ name, path, pages }]
 ```
   - name: The tag name, such as `React`, `Redux`
-  - path: The tag path which page show the tag's posts, such as `xxx.blog/tag/react` will show the posts(the pages field) which tag is `react`
-  - pages: The posts which the tag contain
+  - path: The path which page show the posts of a specific tag, for example `xxx.blog/tag/react` will show the posts(the pages field) which tag is `react`
+  - pages: The posts which the tag field contains
 
 **Vue.computed.$tag/Vue.computed.$category**
-This value is a item of `Vue.computed.$tags.list` which the name field equal to `this.$route.meta.tagName`
+This value is a item of `Vue.computed.$tags.list` which the name field equals to `this.$route.meta.tagName`
 
 ## The Layout maybe you should support
 
 - Tags: This layout is used to show the tags page or tag's post, such as `xxx.blog/tag/`
 
-- Tag: This layout is used to show the posts which tag equal to tag url, such as `xxx.bloh/tag/react` will show the post which tag is `react`
+- Tag: This layout is used to show the posts which tag equal to tag url, for example `xxx.blog/tag/react` will show the post which tag is `react`
 
 - Categories: As same as the Tags layout
 
