@@ -72,7 +72,7 @@ module.exports = {
 
 This value is a item of `Vue.computed.$tags.list` which the name field equals to `this.$route.meta.tagName`
 
-## The Layout maybe you should support
+## The Layout maybe your theme should support
 
 - `Tags`: This layout is used to show the tags page, such as `xxx.blog/tag/`
 
