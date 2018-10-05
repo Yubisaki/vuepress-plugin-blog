@@ -1,8 +1,14 @@
 {
   "name": "@yubisaki/vuepress-plugin-blog",
-  "version": "0.1.0",
+  "version": "0.1.1",
+  "publishConfig": {
+    "access": "public"
+  },
   "description": "blog support plugin for vuepress theme yubisaki ",
   "main": "index.js",
   "author": "子肃 <stickmyc@163.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "@yubisaki/plugin-utils": "^0.1.0"
+  }
 }
