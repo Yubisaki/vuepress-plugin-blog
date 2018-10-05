@@ -17,6 +17,7 @@ module.exports = {
 ## Options
 
 **pageEnhancers**
+
 - Type: `Array`
 
 - default: []
@@ -24,6 +25,7 @@ module.exports = {
 This option is the extend enhancers for [extendPageData](https://vuepress.vuejs.org/plugin/#extendpagedata)
 
 **tagUrl**
+
 - Type: `string`
 
 - default: `/tag/`
@@ -31,6 +33,7 @@ This option is the extend enhancers for [extendPageData](https://vuepress.vuejs.
 This option is the path which page show the tags or the posts of a specific tag
 
 **categoryUrl**
+
 - Type: `string`
 
 - default: `/category/`
@@ -52,6 +55,7 @@ module.exports = {
 ## What can you get?
 
 **Vue.computed.$tags/Vue.computed.$categories**
+
 - length: The length of all the tags
 
 - map: Object of tags
@@ -65,6 +69,7 @@ module.exports = {
   - pages: The posts which the tag field contains
 
 **Vue.computed.$tag/Vue.computed.$category**
+
 This value is a item of `Vue.computed.$tags.list` which the name field equals to `this.$route.meta.tagName`
 
 ## The Layout maybe you should support
