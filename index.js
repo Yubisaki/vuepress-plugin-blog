@@ -49,6 +49,10 @@ module.exports = (options, ctx) => {
   ]
 
   return {
+    extendMarkdown: md => {
+      md.use(require('markdown-it-task-lists'))
+      md.use(require('markdown-it-imsize'), { autofill: true })
+    },
 
     extendPageData (pageCtx) {
       const { frontmatter: rawFrontmatter } = pageCtx;

@@ -19,6 +19,8 @@
   "author": "子肃 <stickmyc@163.com>",
   "license": "MIT",
   "dependencies": {
-    "@yubisaki/plugin-utils": "^0.1.0"
+    "@yubisaki/plugin-utils": "^0.1.0",
+    "markdown-it-imsize": "^2.0.1",
+    "markdown-it-task-lists": "^2.1.1"
   }
 }
