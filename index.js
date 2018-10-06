@@ -50,6 +50,7 @@ module.exports = (options, ctx) => {
 
   return {
     extendMarkdown: md => {
+      md.set({ breaks: true })
       md.use(require('markdown-it-task-lists'))
       md.use(require('markdown-it-imsize'), { autofill: true })
     },
