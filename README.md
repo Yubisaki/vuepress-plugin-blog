@@ -54,6 +54,12 @@ module.exports = {
 
 ## What can you get?
 
+**extendMarkdown**
+
+- [markdown-it-task-list](https://github.com/revin/markdown-it-task-lists)
+
+- [markdown-it-imsize](https://github.com/tatsy/markdown-it-imsize)
+
 **Vue.computed.$tags/Vue.computed.$categories**
 
 - `length`: The length of all the tags
