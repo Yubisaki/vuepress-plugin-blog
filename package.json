@@ -1,6 +1,6 @@
 {
   "name": "@yubisaki/vuepress-plugin-blog",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "publishConfig": {
     "access": "public"
   },
@@ -18,9 +18,15 @@
   "main": "index.js",
   "author": "子肃 <stickmyc@163.com>",
   "license": "MIT",
+  "scripts": {
+    "release": "release-it"
+  },
   "dependencies": {
     "@yubisaki/plugin-utils": "^0.1.0",
     "markdown-it-imsize": "^2.0.1",
     "markdown-it-task-lists": "^2.1.1"
+  },
+  "devDependencies": {
+    "release-it": "^7.6.1"
   }
 }
