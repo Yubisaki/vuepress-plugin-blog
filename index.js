@@ -54,6 +54,13 @@ module.exports = (options, ctx) => {
       md.use(require('markdown-it-imsize'), { autofill: true })
     },
 
+    additionalPages: [
+      {
+         path: ctx.base || '/',
+         frontmatter: { layout: 'Layout' }
+      }
+    ],
+
     extendPageData (pageCtx) {
       const { frontmatter: rawFrontmatter } = pageCtx;
 
@@ -108,21 +115,25 @@ module.exports = (options, ctx) => {
       const extraPages = [
         {
           permalink: tagUrl,
-          frontmatter: { title: 'Tags' }
+          path: tagUrl,
+          frontmatter: { title: 'Tags', layout: 'Tags' }
         },
         {
           permalink: categoryUrl,
-          frontmatter: { title: 'Categories' }
+          path: categoryUrl,
+          frontmatter: { title: 'Categories', layout: 'Categories' }
         },
         ...Object.keys(tagMap).map(tagName => ({
+          path: tagMap[tagName].path,
           permalink: tagMap[tagName].path,
           meta: { tagName },
-          frontmatter: { title: `${tagName} | Tags` }
+          frontmatter: { title: `${tagName} | Tags`, layout: 'Tag' }
         })),
         ...Object.keys(categoryMap).map(categoryName => ({
+          path: categoryMap[categoryName].path,
           permalink: categoryMap[categoryName].path,
           meta: { categoryName },
-          frontmatter: { title: `${categoryName} | Categories` }
+          frontmatter: { title: `${categoryName} | Categories`, layout: 'Category' }
         }))
       ]
 
