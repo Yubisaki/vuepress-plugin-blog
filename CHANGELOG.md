@@ -1,3 +1,13 @@
+<a name="0.1.6"></a>
+## [0.1.6](https://github.com/Yubisaki/vuepress-plugin-blog/compare/v0.1.5...v0.1.6) (2018-11-18)
+
+
+### Bug Fixes
+
+* tag pageCtx enhance ([3f44d85](https://github.com/Yubisaki/vuepress-plugin-blog/commit/3f44d85))
+
+
+
 <a name="0.1.5"></a>
 ## 0.1.5 (2018-10-07)
 
