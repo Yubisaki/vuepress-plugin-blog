@@ -30,7 +30,7 @@ module.exports = (options, ctx) => {
     },
     {
       when: ({ regularPath }) => regularPath.startsWith(tagUrl),
-      frontmatter: { layout: getLayout('Tag', 'Page') }
+      frontmatter: { layout: getLayout('TagLayout', 'Page') }
     },
     {
       when: ({ regularPath }) => regularPath === tagUrl,
