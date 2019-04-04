@@ -2,7 +2,7 @@ const path = require('path')
 const { isString } = require('@yubisaki/plugin-utils')
 
 module.exports = (options, ctx) => {
-  const { layoutComponentMap } = ctx;
+  const { themeAPI: { layoutComponentMap } } = ctx;
 
   const {
     pageEnhancers = [],
