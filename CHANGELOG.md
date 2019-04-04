@@ -1,3 +1,8 @@
+<a name="0.1.7"></a>
+## [0.1.7](https://github.com/Yubisaki/vuepress-plugin-blog/compare/v0.1.6...v0.1.7) (2019-04-04)
+
+
+
 <a name="0.1.6"></a>
 ## [0.1.6](https://github.com/Yubisaki/vuepress-plugin-blog/compare/v0.1.5...v0.1.6) (2018-11-18)
 
