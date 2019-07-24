@@ -6,6 +6,7 @@ module.exports = (options, ctx) => {
 
   const {
     pageEnhancers = [],
+    postUrl = '/',
     tagUrl = '/tag/',
     categoryUrl = '/category/'
   } = options;
@@ -41,6 +42,10 @@ module.exports = (options, ctx) => {
       frontmatter: { layout: getLayout('Layout') }
     },
     {
+      when: ({ regularPath }) => regularPath === postUrl,
+      frontmatter: { layout: getLayout('Layout') }
+    },
+    {
       when: ({ frontmatter }) => frontmatter && frontmatter.type === 'post',
       frontmatter: { layout: getLayout('Post', 'Page') },
       data: { type: 'post' }
@@ -58,6 +63,10 @@ module.exports = (options, ctx) => {
       {
          path: ctx.base || '/',
          frontmatter: { layout: 'Layout' }
+      },
+      {
+        path: postUrl,
+        frontmatter: { layout: 'Layout' }
       }
     ],
 
